@@ -18,5 +18,6 @@ import mongoose from "mongoose"
 mongoose
   .connect(MONGODB_URI)
   .then(()=>console.log("Base de datos conectada a", mongoose.connection.name))
+  .catch((err)=>console.error(err))
 
 */
